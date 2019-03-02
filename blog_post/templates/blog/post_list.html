@@ -1,0 +1,6 @@
+{% extends "blog/base.html" %}
+	{% block content %}
+		{%for Post in post_li%}
+			<h3><a href="{% url 'single-post' Post.pk%}">{{Post.title}}</h3>
+		{% endfor %}
+	{% endblock %}

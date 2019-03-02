@@ -1,0 +1,25 @@
+{%extends 'blog/base.html'%}
+
+{%block content%}
+	<h2>List of Districts</h2>
+	<table>
+		<tr>
+			
+			<th>Name</th>
+			<th> <span>Divisions</span></th>
+			<th>Education rate</th>
+			<th>Population rate</th>
+			<th>Visited before</th>
+			
+		</tr>
+		{%for district in districts%}
+			<tr>
+				<td> {{district.name}}</td>
+				<td> {{district.division}}</td>
+				<td> {{district.education_rate}}</td>
+				<td> {{district.population_density}}</td>
+				<td> {{district.visited}}</td>
+			</tr>
+		{%endfor%}
+	</table>
+{%endblock%}

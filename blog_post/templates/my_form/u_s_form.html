@@ -1,0 +1,24 @@
+{%extends 'blog/base.html'%}
+
+{%block content%}
+	<form action="/user-form/info/" method="post">
+	
+	{%csrf_token%}
+	what's your name?
+	<ul>
+		<span><input type="text" name="user">
+		<input type="submit" value="submit"></span>
+		Passing year
+		<span><input type="text" name="passing_year">
+		<input type="submit" value="submit"></span>
+	</ul>	
+	</form>
+	{%if name%}
+	
+	<p> {{name}} is added to the list.
+	</p>
+	{%elif year%}
+	<p>{{year}} is your SSC passing year</p>
+	{%endif%}
+
+{%endblock%}

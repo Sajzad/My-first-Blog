@@ -1,0 +1,18 @@
+{%extends 'blog/base.html'%}
+
+{%block content%}
+	<h2> Divisions Of Bangladesh</h2>
+	<table class='table table-striped'>
+		<tr>
+			<th>Name</th>
+			<th>Population</th>
+			<th>Area</th>
+		</tr>
+	{%for div in divisions%}
+		<tr>
+			<td> {{div.name}}</td>
+			<td> {{div.population}}</td>
+			<td> {{div.area}}</td>
+		</tr>
+	{%endfor%}	
+{%endblock%}

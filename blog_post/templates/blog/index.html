@@ -1,0 +1,19 @@
+{%extends "blog/base.html"%}
+
+{%block content%}
+<h1> Url এবং Template ব্যাবহার করা </h1>
+	<pre class="lang:python decode:true">
+		# informations/views.py
+
+		def division_list(request):
+			divisions = Divisions.objects.all()
+			context = {'divisions': divisions,}
+			return render(request, 'information/division_list.html', context)
+	</pre>
+	<h2> I am {{name}}</h2>
+	<h2>My District is: {{district}}</h2>
+	<p> Welcome to my {{v}}</p>
+		{%for Post in all_post_list%}
+			{{Post}}
+		{%endfor%}
+{%endblock%}		

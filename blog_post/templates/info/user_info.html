@@ -1,0 +1,21 @@
+{%extends 'blog/base.html'%}
+
+{%block content%}
+
+<h2>Find out the cost<h2>
+	<form action ="/user/info/" method="post">
+	
+		{%csrf_token%}
+		
+		What's Your Name? 
+		<input type="text" name="user_name">
+	    <input type="submit"value="submit"> 
+
+	</form>
+	
+	{%if name%}
+		<p> {{name}} is successfully added for registration</p>
+	{%endif%}
+{%endblock%}
+
+

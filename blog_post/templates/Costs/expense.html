@@ -1,0 +1,23 @@
+{%extends 'blog/base.html'%}
+
+{%block content%}
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>purpose</th>
+			<th>Amount</th>
+			<th>Date</th>
+			
+			
+		</tr>
+	</thead>
+	<tbody>
+	{%for x in Expenses%}
+	<tr>
+		<td>{{x.purpose}}</td>
+		<td>{{x.amount}}</td>
+		<td>{{x.date}}}</td>
+	</tr>
+	{%endfor%}
+	</tbody>
+{%endblock%}
