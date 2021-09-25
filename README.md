@@ -1,6 +1,5 @@
 # My-first-Blog
-This is my First created blog consisting of a number of apps in Django Framework. This was done for my learning purpose.
-# Business Consultancy Website
+This is my First blog consisting of a number of apps in Django Framework. This was done for learning purpose.
 
 * **Python** version: 3.6
 
