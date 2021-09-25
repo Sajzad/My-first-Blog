@@ -19,7 +19,7 @@ This is my First created blog consisting of a number of apps in Django Framework
 
 * Install and setup Postgresql database on your system if not done already.
 
-* Clone the repo: ```git clone git@bitbucket.org:team_gigaflops/business_consultancy_firm.git```
+* Clone the repo: ```https://github.com/Sajzad/My-first-Blog.git```
 
 * Go to **business_consultancy_firm** dir. And create virtual environment with virtualenv: ```virtualenv -p /usr/bin/python3.6 .env```.
 
