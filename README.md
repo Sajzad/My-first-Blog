@@ -20,7 +20,7 @@ This is my First blog consisting of a number of apps in Django Framework. This w
 
 * Clone the repo: ```https://github.com/Sajzad/My-first-Blog.git```
 
-* Go to **business_consultancy_firm** dir. And create virtual environment with virtualenv: ```virtualenv -p /usr/bin/python3.6 .env```.
+* Go to **blogging** dir. And create virtual environment with virtualenv: ```virtualenv -p /usr/bin/python3.6 .env```.
 
 * Activate the virtual environment: ```source .env/bin/activate```.
 
